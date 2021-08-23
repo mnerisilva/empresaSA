@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="br">
+    <meta charset="UTF-8">
+    <title>EmpresaSA</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/business-casual.css"/>
+
+    
+</head>
+<body ng-app="website">
+
+<div ng-include='"templates/header.html"'></div>
+<!-- futuramente nosso conteudo ficará aqui -->
+<div class="container" ng-view="conteudo"></div>
+<div ng-include='"templates/footer.html"'></div> 
+
+<!-- outros scripts que criaremos ficarão aqui -->
+
+
+<!-- aqui colocaremos posteriormente a chamada para o angular -->
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script><!-- outros scripts que criaremos ficarão aqui -->
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
